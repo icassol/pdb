@@ -1,4 +1,4 @@
-class Tarea:
+class Turno:
     def __init__(self, nombre, prioridad):
         self.nombre = nombre
         self.prioridad = prioridad   # número mayor = mayor prioridad
@@ -87,11 +87,11 @@ class ColaPrioridadDinamica:
 
 cola = ColaPrioridadDinamica()
 
-cola.encolar(Tarea("Proceso A", 1))
-cola.encolar(Tarea("Proceso B", 3))
-cola.encolar(Tarea("Proceso C", 2))
-cola.encolar(Tarea("Proceso D", 3))
-cola.encolar(Tarea("Proceso E", 1))
+cola.encolar(Turno("Ana", 1))
+cola.encolar(Turno("Jose", 3))
+cola.encolar(Turno("Pepe", 2))
+cola.encolar(Turno("Marisa", 3))
+cola.encolar(Turno("Carmen", 1))
 
 cola.mostrar()
 
